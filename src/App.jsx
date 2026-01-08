@@ -1,3 +1,4 @@
+import Feedback from "./components/Feedback/Feedback.jsx";
 import { useState } from 'react';
 
 import './App.css'
@@ -14,6 +15,7 @@ function App() {
       <Button name="plus" onButtonClick={()=> setCount((prev) => prev +1)} />
       <Button name="minus" onButtonClick={onMinus}/>
         <div>{count}</div>
+        <Feedback />
     </div>
   );
 }
